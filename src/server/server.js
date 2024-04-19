@@ -1,8 +1,10 @@
-const express = require('express')
-const path = require('path') //Propio de node para leer las carpetas del proyecto
+//const express = require('express')
+import express from 'express'
+//const path = require('path') 
+import path from 'path' //Propio de node para leer las carpetas del proyecto
 
 //Traemos el puerto y el path de app.js
-const startServer = (options) => {
+export const startServer = (options) => {
     const { port, public_path = 'public' } = options
 
     //Ejecutamos express y lo ponemos disponible en la variable
@@ -23,6 +25,6 @@ const startServer = (options) => {
     }) 
 }
 
-module.exports = {
+/*module.exports = {
     startServer
-}
+}*/
